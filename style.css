@@ -11,10 +11,7 @@ input:focus {
   outline: none;
 }
 
-button:hover {
-  cursor: pointer;
-}
-
+button:hover,
 .pointer:hover {
   cursor: pointer;
 }
@@ -65,6 +62,7 @@ nav {
 .menu {
   display: flex;
   flex-direction: column;
+  margin-right: 50px;
   align-items: start;
 }
 
@@ -135,6 +133,11 @@ nav {
   display: flex;
   margin: auto;
   justify-content: space-between;
+  align-items: center;
+}
+
+.feature-down i {
+  margin: 0 5px;
 }
 
 .feature-button {
@@ -157,7 +160,7 @@ nav {
 
 /* Reputation section------> */
 .reputation {
-  padding: 30px 0;
+  padding: 40px 0;
   margin: aut0;
 }
 
@@ -180,10 +183,9 @@ nav {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   max-width: 280px;
-  margin: 20px;
-  padding: 10px;
+  margin: 30px;
+  padding: 15px;
 }
 
 .reputation-card i {
@@ -212,7 +214,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding: 50px 0;
+  padding: 60px 0;
   color: white;
 }
 
@@ -234,6 +236,8 @@ nav {
 }
 
 .about-container {
+  border-radius: 2px;
+  box-shadow: 1px 1px 10px grey;
   margin: 30px auto;
   padding: 30px;
   width: 70%;
@@ -247,14 +251,14 @@ nav {
   color: #2947a9;
   border: none;
   padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: 2px;
   margin: 30px 10px;
 }
 
 /* Services section-------> */
 .services {
   background-color: #f6f8f7;
-  padding: 20px;
+  padding: 40px;
 }
 
 .services h4 {
@@ -276,7 +280,7 @@ nav {
 }
 
 .service-container {
-  padding: 50px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -733,9 +737,9 @@ nav {
     width: 90%;
   }
 
-  .form{
+  .form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 
@@ -759,6 +763,10 @@ nav {
     flex-direction: row;
     justify-content: end;
     width: auto;
+  }
+
+  .menu-items {
+    margin: 20px;
   }
 
   .experience-left {
@@ -820,7 +828,7 @@ nav {
 
   .hero {
     flex-direction: column;
-    height: 75vh;
+    height: 78vh;
     position: relative;
   }
 
@@ -832,10 +840,6 @@ nav {
 
   form {
     width: 50%;
-  }
-
-  .menu-items {
-    margin: 10px;
   }
 
   .menu {
@@ -860,8 +864,6 @@ nav {
 
   .about-container {
     position: absolute;
-    border-radius: 3px;
-    box-shadow: 1px 1px 10px black;
     min-width: 300px;
     padding: 20px;
     width: 30%;
@@ -873,6 +875,43 @@ nav {
     margin-top: 30px;
   }
 
+  .projects {
+    padding: 50px;
+    flex-direction: row;
+  }
+
+  .project-right {
+    display: flex;
+    flex-direction: column;
+    /* align-items: end; */
+  }
+
+  .project-left {
+    width: 30%;
+  }
+
+  .project-card-container {
+    margin-top: 100px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .project-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .experience-right h2 {
+    font-size: 60px;
+  }
+
+  .footer {
+    flex-direction: row;
+  }
+}
+
+@media (min-width:990px) {
   .experience {
     flex-direction: row;
     margin: 50px 0;
@@ -893,37 +932,4 @@ nav {
     font-size: 40px;
   }
 
-  .projects {
-    padding: 50px;
-    flex-direction: row;
-  }
-
-  .project-right {
-    display: flex;
-    flex-direction: column;
-    /* align-items: end; */
-  }
-
-  .project-left {
-    width: 30%;
-  }
-
-  .project-card-container {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .project-buttons {
-    display: flex;
-    justify-content: center;
-  }
-
-  .experience-right h2 {
-    font-size: 60px;
-  }
-
-  .footer {
-    flex-direction: row;
-  }
 }
