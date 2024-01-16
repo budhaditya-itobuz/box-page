@@ -20,6 +20,7 @@ button:hover,
 nav {
   display: flex;
   flex-direction: column;
+  top: 0px;
 }
 
 #the-logo {
@@ -824,6 +825,10 @@ nav {
   nav {
     flex-direction: row;
     justify-content: space-between;
+    background-color: white;
+    z-index: 15;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    position: sticky;
   }
 
   .hero {
