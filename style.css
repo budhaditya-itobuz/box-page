@@ -750,9 +750,9 @@ nav {
   color: white;
 }
 
-@media (min-width: 650px) {``
+@media (min-width: 650px) {
   .project-buttons img {
-    display: inline;
+    display: block;
     width: 16px;
     height: 16px;
     margin: 5px;
