@@ -28,8 +28,8 @@ nav {
 }
 
 .logo {
+  margin: auto;
   display: flex;
-  padding-left: 50px;
 }
 
 .logo-down {
@@ -63,7 +63,6 @@ nav {
 .menu {
   display: flex;
   flex-direction: column;
-  margin-right: 50px;
   align-items: start;
 }
 
@@ -71,8 +70,10 @@ nav {
   font-size: 18px;
   font-weight: 400;
   margin: 10px;
+  padding-left:10px ;
   text-decoration: none;
   color: black;
+  text-wrap: nowrap;
 }
 
 .menu-items:hover {
@@ -91,15 +92,16 @@ nav {
 }
 
 .mission h1 {
+  color:#292E3D;
   margin: 20px;
   text-wrap: wrap;
-  font-size: 55px;
+  font-size: 50px;
   font-weight: 600;
   flex-direction: column;
 }
 
 .mission {
-  max-width: 800px;
+  max-width: 600px;
   height: 100%;
   position: relative;
 }
@@ -169,7 +171,10 @@ nav {
   padding: 30px;
   text-align: center;
   font-size: 36px;
+  color: #292E3D;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .card-container {
@@ -184,9 +189,11 @@ nav {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  max-width: 280px;
+  justify-content: center;
+  width: 280px;
   margin: 30px;
-  padding: 15px;
+  padding: 10px;
+  height: 14rem;
 }
 
 .reputation-card i {
@@ -259,7 +266,7 @@ nav {
 /* Services section-------> */
 .services {
   background-color: #f6f8f7;
-  padding: 40px;
+  padding: 40px 10px;
 }
 
 .services h4 {
@@ -278,6 +285,7 @@ nav {
 .service-card h5 {
   font-size: 20px;
   margin: 10px;
+  text-align: center;
 }
 
 .service-container {
@@ -292,11 +300,11 @@ nav {
   color: white;
 }
 
-.white i {
+.white img {
   border-bottom: 1px solid black;
 }
 
-.blue i {
+.blue img {
   border-bottom: 1px solid white;
 }
 
@@ -338,23 +346,23 @@ nav {
 }
 
 .stat {
-  padding: 20px;
+  padding: 15px;
   margin: 20px;
   box-shadow: 2px 2px 5px grey;
-  width: 280px;
+  min-width: 250px;
   position: relative;
   background-color: white;
 }
 
 .stat h2 {
   margin-left: 20px;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
 
 }
 
 .stat h5 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   color: #667299;
   padding: 10px;
@@ -363,7 +371,7 @@ nav {
 }
 
 .stat img {
-  width: 93px;
+  width: 75px;
   height: auto;
   position: absolute;
   top: -10%;
@@ -373,6 +381,7 @@ nav {
 .stat2 img {
   right: 0%;
   left: -10%;
+  /* left:0; */
 }
 
 .stat4 img {
@@ -393,7 +402,7 @@ nav {
 .experience-right h2 {
   text-wrap: wrap;
   color: #2947A9;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   margin: 30px 20px;
 }
@@ -401,7 +410,7 @@ nav {
 .experience-right h4 {
   text-wrap: wrap;
   color: #525B7A;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   margin: 30px 20px;
 }
@@ -429,6 +438,7 @@ nav {
   height: 70vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   color: white;
   padding: 10px;
 }
@@ -466,6 +476,7 @@ nav {
   margin: 20px 0;
   font-size: 36px;
   font-weight: 700;
+  text-align: center;
 }
 
 
@@ -473,13 +484,14 @@ nav {
   font-size: 24px;
   font-weight: 400;
   margin: 20px 0;
+  text-align: center;
 }
 
 
 /* projects--------> */
 .project-card img {
-  width: 300px;
-  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .projects {
@@ -487,8 +499,14 @@ nav {
   flex-direction: column;
 }
 
+.project-right{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .project-card {
-  width: 300px;
+  max-width: 320px;
   background-color: #2947A9;
   color: white;
   display: flex;
@@ -500,19 +518,26 @@ nav {
   font-size: 20px;
   font-weight: 700;
   margin: 10px;
+  text-wrap: wrap;
 }
 
 .project-card h6 {
   font-size: 18px;
   font-weight: 400;
   margin: 10px;
+  text-wrap: wrap;
+}
+
+.project-right{
+  margin:auto;
 }
 
 .project-card-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 10px;
+  /* margin: auto; */
 }
 
 .project-buttons {
@@ -544,6 +569,7 @@ nav {
   font-weight: 500;
   color: #C2C7D6;
   margin: 20px;
+  border-left: 5px solid white;
   padding: 0 10px;
 }
 
@@ -567,12 +593,8 @@ nav {
 
 /* form section-----> */
 .form {
-  padding: 50px;
+  padding: 50px 15px;
   background-color: #f6f8f7;
-  margin: auto;
-}
-
-.form {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -629,13 +651,17 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  max-width: 400px;
+  padding: 30px;
+  margin: auto;
 }
 
 
 .footer-left {
-  padding: 10px;
+  padding: 5px;
   display: flex;
   max-width: 500px;
+  margin: auto;
 }
 
 .footer-right {
@@ -649,21 +675,23 @@ nav {
 
 .foot-left-content h5 {
   text-wrap: wrap;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   min-height: 70px;
 }
 
+
 .logo-down h4 {
   color: #2947A9;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
 
 }
 
 .foot-left-heading h5 {
   color: #2947a9;
-  font-size: 20px;
+  font-size: 16px;
+  /* font-size: 20px; */
   font-weight: 500;
   padding-right: 10px;
   min-height: 70px;
@@ -671,20 +699,22 @@ nav {
 
 .footer-right h5 {
   color: #2947a9;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
+  min-height: 30px;
 }
 
 .email {
   margin: 10px 0;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  min-height: 60px;
 }
 
 .email button {
   padding: 10px;
   width: 100px;
-  margin: 10px;
+  margin: 10px 0;
   border: none;
   border-radius: 2px;
   background-color: #f9995d;
@@ -693,6 +723,7 @@ nav {
 .logo-social {
   margin: 10px 0;
   display: flex;
+  min-height: 60px;
 }
 
 .email input {
@@ -701,13 +732,10 @@ nav {
 }
 
 .logo-social i {
-  font-size: 40px;
+  font-size: 35px;
   margin: 10px;
 }
 
-.footer {
-  padding: 30px;
-}
 
 /* Copyright section-----> */
 .copyright {
@@ -722,13 +750,21 @@ nav {
   color: white;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 650px) {``
   .project-buttons img {
     display: inline;
     width: 16px;
     height: 16px;
     margin: 5px;
   }
+
+  .mission h1{
+    font-size: 60px;
+  }
+  .consult-left h4,.consult-left h6{
+    text-align: left;
+  }
+
 
   .hero h1 {
     font-size: 65px;
@@ -753,16 +789,13 @@ nav {
     position: absolute;
     top: 20%;
     left: 15%;
-  }
-
-  .logo {
-    padding-left: 150px;
+    font-size: 55px;
   }
 
   .menu {
     width: 100%;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
     width: auto;
   }
 
@@ -775,18 +808,29 @@ nav {
     height: 600px;
     position: relative;
   }
+  .experience-right h2{
+    font-size: 50px;
+  }
 
   .stat {
     position: absolute;
+    width: 290px;
+  }
+  .stat h2{
+    font-size: 60px;
+  }
+  .stat h5{
+    font-size: 24px;
   }
 
   .stat img {
+    width: 80px;
     right: -10%;
   }
 
   .stat1 {
     top: 10%;
-    right: 10%;
+    right: 15%;
     z-index: 5;
   }
 
@@ -818,6 +862,50 @@ nav {
   .consultation-right {
     margin: auto;
   }
+  .project-card-container{
+    flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  .footer {
+    flex-direction: row;
+    max-width: none;
+  }
+
+  .footer-left {
+    padding: 10px;
+  }
+
+  .foot-left-content h5 {
+    font-size: 20px;
+  }
+
+  .foot-left-heading h5 {
+    font-size: 20px;
+  }
+
+  .footer-right h5 {
+    font-size: 20px;
+  }
+
+  .email {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .email button{
+    margin:0 10px;
+  }
+
+  .logo-social i {
+    font-size: 40px;
+
+  }
+  .logo-social{
+    min-height: 60px;
+    align-items: center;
+  }
 }
 
 @media (min-width: 850px) {
@@ -827,8 +915,20 @@ nav {
     justify-content: space-between;
     background-color: white;
     z-index: 15;
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
     position: sticky;
+  }
+
+  .mission h1{
+    font-size: 72px;
+    width: 700px;
+  }
+  .mission {
+    font-size: 72px;
+  }
+
+  .logo {
+    margin: 0 0px;
+    padding-left: 50px;
   }
 
   .hero {
@@ -850,6 +950,7 @@ nav {
   .menu {
     justify-content: end;
     align-items: center;
+    margin-right: 100px;
   }
 
   .card-container {
@@ -887,35 +988,27 @@ nav {
   .project-right {
     display: flex;
     flex-direction: column;
-    /* align-items: end; */
-  }
-
-  .project-left {
-    width: 30%;
   }
 
   .project-card-container {
     margin-top: 100px;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
   }
 
   .project-buttons {
     display: flex;
     justify-content: center;
   }
-
-  .experience-right h2 {
-    font-size: 60px;
-  }
-
-  .footer {
-    flex-direction: row;
+  .experience-right h2{
+    font-size: 50px;
   }
 }
 
-@media (min-width:990px) {
+@media (min-width:950px) {
+
+  .logo {
+    margin-left: 100px;
+  }
+
   .experience {
     flex-direction: row;
     margin: 50px 0;
@@ -925,15 +1018,14 @@ nav {
     flex-wrap: wrap;
     padding: 10px;
   }
-
+  .experience-right h2{
+    font-size: 60px;
+  }
   .experience-left {
-    max-width: 850px;
-    min-width: 600px;
+    /* max-width: 850px;
+    min-width: 600px; */
     width: 60%;
   }
 
-  .experience-right h2 {
-    font-size: 40px;
-  }
 
 }
