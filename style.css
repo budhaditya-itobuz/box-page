@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "work sans", "sans sarif";
 }
 
 body {
@@ -23,6 +24,13 @@ nav {
   top: 0px;
 }
 
+.ham{
+  position: absolute;
+  font-size: 30px;
+  top:20px;
+  right: 20px;
+}
+
 #the-logo {
   font-style: italic;
 }
@@ -31,6 +39,7 @@ nav {
   margin: auto;
   display: flex;
 }
+
 
 .logo-down {
   display: flex;
@@ -70,7 +79,7 @@ nav {
   font-size: 18px;
   font-weight: 400;
   margin: 10px;
-  padding-left:10px ;
+  padding-left: 10px;
   text-decoration: none;
   color: black;
   text-wrap: nowrap;
@@ -92,7 +101,7 @@ nav {
 }
 
 .mission h1 {
-  color:#292E3D;
+  color: #292E3D;
   margin: 20px;
   text-wrap: wrap;
   font-size: 50px;
@@ -499,8 +508,8 @@ nav {
   flex-direction: column;
 }
 
-.project-right{
-  width:100%;
+.project-right {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -528,8 +537,8 @@ nav {
   text-wrap: wrap;
 }
 
-.project-right{
-  margin:auto;
+.project-right {
+  margin: auto;
 }
 
 .project-card-container {
@@ -758,10 +767,16 @@ nav {
     margin: 5px;
   }
 
-  .mission h1{
+  .ham{
+    display: none;
+  }
+  
+  .mission h1 {
     font-size: 60px;
   }
-  .consult-left h4,.consult-left h6{
+
+  .consult-left h4,
+  .consult-left h6 {
     text-align: left;
   }
 
@@ -808,7 +823,8 @@ nav {
     height: 600px;
     position: relative;
   }
-  .experience-right h2{
+
+  .experience-right h2 {
     font-size: 50px;
   }
 
@@ -816,10 +832,12 @@ nav {
     position: absolute;
     width: 290px;
   }
-  .stat h2{
+
+  .stat h2 {
     font-size: 60px;
   }
-  .stat h5{
+
+  .stat h5 {
     font-size: 24px;
   }
 
@@ -862,10 +880,11 @@ nav {
   .consultation-right {
     margin: auto;
   }
-  .project-card-container{
+
+  .project-card-container {
     flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .footer {
@@ -894,15 +913,16 @@ nav {
     align-items: center;
   }
 
-  .email button{
-    margin:0 10px;
+  .email button {
+    margin: 0 10px;
   }
 
   .logo-social i {
     font-size: 40px;
 
   }
-  .logo-social{
+
+  .logo-social {
     min-height: 60px;
     align-items: center;
   }
@@ -918,10 +938,11 @@ nav {
     position: sticky;
   }
 
-  .mission h1{
+  .mission h1 {
     font-size: 72px;
     width: 700px;
   }
+
   .mission {
     font-size: 72px;
   }
@@ -998,7 +1019,8 @@ nav {
     display: flex;
     justify-content: center;
   }
-  .experience-right h2{
+
+  .experience-right h2 {
     font-size: 50px;
   }
 }
@@ -1018,9 +1040,11 @@ nav {
     flex-wrap: wrap;
     padding: 10px;
   }
-  .experience-right h2{
+
+  .experience-right h2 {
     font-size: 60px;
   }
+
   .experience-left {
     /* max-width: 850px;
     min-width: 600px; */
