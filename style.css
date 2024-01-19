@@ -24,7 +24,7 @@ nav {
   top: 0px;
 }
 
-.ham{
+.hamburger{
   position: absolute;
   font-size: 30px;
   top:20px;
@@ -767,10 +767,10 @@ nav {
     margin: 5px;
   }
 
-  .ham{
-    display: none;
+  .hamburger{
+    display: none !important;
   }
-  
+
   .mission h1 {
     font-size: 60px;
   }
